@@ -4,10 +4,10 @@
 baseurl:
 url: http://mazhuang.org
 date_format: "ordinal"
-title: 码志
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+title: CodeTortoiseLikeTortoise
+subtitle: "码龟像乌龟一样码_(:зゝ∠)_ "
+description: "凌晨的个人博客"
+keywords: 凌晨，tortoise，blog
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
