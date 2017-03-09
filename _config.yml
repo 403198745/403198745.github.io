@@ -2,9 +2,9 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://mazhuang.org
+url: https://403198745.github.io/
 date_format: "ordinal"
-title: CodeTortoiseLikeTortoise
+title: CodingLikeTortoise
 subtitle: "码龟像乌龟一样码_(:зゝ∠)_ "
 description: "凌晨的个人博客"
 keywords: 凌晨，tortoise，blog
