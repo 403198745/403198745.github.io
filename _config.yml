@@ -4,7 +4,7 @@
 baseurl:
 url: https://403198745.github.io/
 date_format: "ordinal"
-title: CodingLikeTortoise
+title: CodLikeTortoise
 subtitle: "码龟像乌龟一样码_(:зゝ∠)_ "
 description: "凌晨的个人博客"
 keywords: 凌晨，tortoise，blog
@@ -106,6 +106,5 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [Java, C# Python, Design Patterns]
-skill_mobile_app_keywords: [Android, Reverse Engineering]
-skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
+skill_software_keywords: [php, C#,Python, Javascript]
+skill_mobile_app_keywords: [HTML5, Javascript]

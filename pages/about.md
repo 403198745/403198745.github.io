@@ -1,31 +1,27 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 努力让自己爱上编程
+keywords: LC, 凌晨
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+我是凌晨，我不爱编程，我想爱上编程。
 
-仰慕「优雅编码的艺术」。
+崇尚生活至上。
 
-## 坚信
+## 信条
 
-* 熟能生巧
-* 努力改变人生
+* 先有兴趣再有动力
+* 坚信自己所想的，不能被别人轻易动摇
+* 别人怎么看你是别人的事情，人首先要爱自己
 
 ## 联系
 
-* GitHub：[@mzlogin](https://github.com/mzlogin)
-* 掘金：[@mzlogin](http://gold.xitu.io/user/570ddaeb2e958a005c63b2da)
-* LinkedIn：[@mazhuang](https://www.linkedin.com/in/mazhuang)
+* GitHub：[@403198745](https://github.com/403198745)
 * 博客：[{{ site.title }}]({{ site.url }})
-* 微博: [@mzlogin](http://weibo.com/mzlogin)
-* 知乎: [@mzlogin](http://www.zhihu.com/people/mzlogin)
-* 豆瓣: [@壮哥不胖](http://www.douban.com/people/freedim)
 
 ## Skill Keywords
 
@@ -43,9 +39,4 @@ permalink: /about/
     {% endfor %}
 </div>
 
-#### Windows Developer Keywords
-<div class="btn-inline">
-    {% for keyword in site.skill_windows_keywords %}
-    <button class="btn btn-outline" type="button">{{ keyword }}</button>
-    {% endfor %}
-</div>
+
