@@ -10,5 +10,5 @@ permalink: /links/
 
 > God made relatives. Thank God we can choose our friends.
 * [郭老师](http://my.csdn.net/dfsae)
-* [没有了 - -](#))
+* [Iamdying](#)
 * [这里](https://403198745.github.io)
