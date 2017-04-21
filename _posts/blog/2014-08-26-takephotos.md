@@ -1,18 +1,17 @@
 ---
 layout: post
-title: 摄影教训总结
+title: Sqlserver的一些常见知识
 categories: Blog
-description: 历次出游摄影的一些失败的点。
-keywords: 摄影, 教训
+description:Sqlserver的一些常见知识
+keywords: 数据库,sqlserver
 ---
 
-### 2014 年 8 月 杭州
+### UUID以及8位数字uuid
 
-1. 以人为主体没错，但是要有远有近，拍出来全是脸和上半身也不好。
-2. 偶尔兼顾景色，不是所有情况下虚化背景都是加分。
-3. 一般情况下色彩鲜艳的衣服拍出来会更好看。
-4. 人像镜头不是万能的，大光圈容易虚焦，取景范围影响构图，这些都需要更好地考虑。
+```
+RIGHT(100000000 + CONVERT(bigint, ABS(CHECKSUM(NEWID()))), 8)  
 
+```
 ### 2014 年 6 月 武汉
 
 1. 照顾好拍摄对象的心情，她开心和配合了，才容易出好片。
