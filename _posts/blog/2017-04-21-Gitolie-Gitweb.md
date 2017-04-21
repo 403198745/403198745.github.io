@@ -14,12 +14,14 @@ keywords: Git服务器, Linux操作
 sudo apt-get update 
 sudo apt-get install git
 sudo apt-get install openssh-server
+
 ```
 ### 创建git用户
 ```
 sudo adduser --system --shell /bin/bash --group git
 sudo adduser git ssh #特定系统需要加入ssh组才能开始ssh协议登录
 passwd git #设置密码
+
 ```
 ### 配置gitlite
 1. 生成ssh key——git需要使用ssh访问，所以需要生成一组ssh key，
@@ -30,7 +32,8 @@ passwd git #设置密码
     cp id_rsa.pub authorized_keys
     
     ```
-2. 安装gitolite
+2. 安装gitolite  
+
   ```
     su git
     mkdir bin  #创建bin目录用于安装gitolite
@@ -42,22 +45,25 @@ passwd git #设置密码
   ~/bin/gitolite setup -pk ~/git.pub
   
   ```
-  成功如图：![此处输入图片的描述][1]
+成功如图：![此处输入图片的描述][1]
 
->   成功安装后gitolite会自动生成两个仓储，一个是testing.git用来测试，另一个gitolite-admin就是用来管理gitolite的配置仓储。
-     将gitolite-admin.git clone到本地，注意：还是在git用户下，因为当前只有git用户对其有读写权限。
+>  成功安装后gitolite会自动生成两个仓储，一个是testing.git用来测试，另一个gitolite-admin就是用来管理gitolite的配置仓储。 将gitolite-admin.git clone到本地，注意：还是在git用户下，因为当前只有git用户对其有读写权限。
      
 ### 添加git用户
 使用xshell rz命令将pub文件考入gitolite-admin仓库中的keydir目录
+
 ```
 rz #选择公钥文件
 
 ```
 ### 添加仓库
+
 打开gitolite-admin/conf/gitolite.conf文件
 
 ```
+
 vim /home/git/gitolite-admin/conf/gitolite.conf #修改配置文件
+
 ```
 
 ![此处输入图片的描述][2]
