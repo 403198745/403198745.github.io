@@ -55,33 +55,40 @@ rz #选择公钥文件
 ```
 ### 添加仓库
 打开gitolite-admin/conf/gitolite.conf文件
+
 ```
 vim /home/git/gitolite-admin/conf/gitolite.conf #修改配置文件
 ```
+
 ![此处输入图片的描述][2]
 > 上面的repo代表是创建了一个demo仓库（创建的方式有很多种，这里我只是介绍这一种），下面的RW代表可读写，还有其他的关键字，自己搜索。等于号后面的代表是对于这个仓库的权限，多用户使用空格。
 
 ### 将配置推送到gitolite服务器
+
 ```
   git add .
   git commit -m "这个是提交信息，用于表示这次提交的解释，可以随便写"
   git push origin master 
   
 ```
+
 至此gitolite搭建成功
 
 ## GitWeb安装配置
 
 ### 安装
+
 ```
   sudo apt - get install gitweb apache2 
 ```
+
 ### 配置
 ```
 vim /etc/apache2/conf-available/gitweb.conf  配置apache gitweb所在目录目录
 cd /var/ www/gitweb   
 sudo ln -s /usr/ share/gitweb/* .    ##进行gitweb资源链接
 ```
+
 ```
 Alias /gitweb /var/www/git
 SetEnv GITWEB_CONFIG /etc/gitweb.conf
@@ -94,14 +101,12 @@ AddHandler cgi-script cgi
 DirectoryIndex gitweb.cgi
 </Directory>
 ```
+
 ```
 vim /etc/gitweb.conf #修改projectroot为你repository所在目录
 /etc/init.d/apache2 restart
 ```
 
 
-
-
-
-  [1]: http://img.blog.csdn.net/20140809155108345?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWVuZ3hpYW5neXVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast
-  [2]: http://img.blog.csdn.net/20140809160614083?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWVuZ3hpYW5neXVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast
+[1]: http://img.blog.csdn.net/20140809155108345?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWVuZ3hpYW5neXVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast
+[2]: http://img.blog.csdn.net/20140809160614083?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWVuZ3hpYW5neXVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast
