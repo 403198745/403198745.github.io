@@ -22,7 +22,6 @@ keywords: paas, 云计算
 ## 本地部署On-Premises ##
 自己造车，硬件，机器环境都自己搭
 
-除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：
 
 ## 云服务 ##
 云服务也就是云计算的三个分层:Iaas,Paas,Saas
