@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About
-description: 努力让自己爱上编程
+description: toi toi toi 
 keywords: LC, 凌晨
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是凌晨，我不爱编程，我想爱上编程。
 
-崇尚生活至上。
+
+崇尚生活至上,天天new 对象
 
 ## 信条
 
