@@ -2,7 +2,7 @@
 layout: post
 title: Cloud Foundry概述和组成
 categories: Blog
-description: 对Cloud Foundry进行了一个浅显的学习
+description: 对Cloud Foundry内容组成进行了一个学习
 keywords: CF, Cloud Foundry,Component
 ---
 # CF概述
