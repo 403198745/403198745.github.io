@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="我爱你，lucy" />
+<meta name="description" content="我爱你，lucy" />
+<title>LcandLucy</title>
+<link href="css/default.css" rel="stylesheet" />
+<link href="css/history.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden_dev.js"></script>
+<script type="text/javascript" src="js/functions_dev.js"></script>
+</head>
+<body>
+<!-- 代码 开始 -->
+<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 625px; margin-top: 57px; margin-left: 165px;">
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words">
+					<div id="messages">
+						和lucy在一起的
+						<div id="elapseClock"><span class="digit">0</span> 年 <span class="digit">0</span> 月 <span class="digit">0</span> 天 <span class="digit">0</span> 时 <span class="digit">0</span> 分 <span class="digit">0</span> 秒</div>
+					</div>
+					<div id="loveu">
+						I love U , Lucy<br> 
+						<div class="signature">——<a href="http://yanhaijing.com" target="_blank">你的大猪蹄子LC</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var displayMode = 1;
+		var together = new Date();
+		together.setFullYear(2019, 9, 7);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		$("#loveHeart").click(function(){
+			displayMode *= -1;
+			timeElapse(together, displayMode);
+		});
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 100);
+
+			timeElapse(together, displayMode);
+			setInterval(function () {
+				timeElapse(together, displayMode);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+<div class="head-warp">
+  <div class="head">
+        <div class="nav-box">
+          <ul>
+              <li class="cur" style="text-align:center; font-size:62px; font-family:'微软雅黑', '宋体';color:#fff">Love Memory</li>
+          </ul>
+        </div>
+  </div>
+</div>
+<div class="main">
+	<div class="history">
+		<div class="history-date">
+	      	<ul>
+				<h2 class="first"><a href="#nogo">2019年</a></h2>
+				<li class="green">
+					<h3>07.27</h3>
+					<dl>
+						<dt>
+							<div class="feed_arrow">
+							</div>		
+							<h4>
+								那天
+							</h4>	
+							<div class="wrap">	
+								<img src="photo/2.png">
+								<p>那天，Lucy的笑容俘获了LC的心
+								</p>
+							</div>									 
+						</dt>
+					</dl>
+				</li>									
+			</ul>
+	    </div><!-- .history-date --> 
+	    <div class="history-date">
+	      	<ul>
+				<h2 class="first"><a href="#nogo">2019年</a></h2>
+				<li class="green">
+					<h3>09.7</h3>
+					<dl>
+						<dt>
+							<div class="feed_arrow">
+							</div>		
+							<h4>
+								在一起
+							</h4>	
+							<div class="wrap">	
+								<img src="photo/4.png">
+								<p>今晚月色真美，庆祝我们的第一天
+								</p>
+							</div>									 
+						</dt>
+					</dl>
+				</li>					
+			</ul>
+	    </div><!-- .history-date -->
+	    <div class="history-date">
+	      	<ul>
+				<h2 class="first"><a href="#nogo">2020年</a></h2>
+				<li class="green">
+					<h3>02.02</h3>
+					<dl>
+						<dt>
+							<div class="feed_arrow">
+							</div>		
+							<h4>
+								独一无二的一天
+							</h4>	
+							<div class="wrap">	
+								<img src="photo/5.png">
+								<p>我们一起度过了20200202
+								</p>
+							</div>									 
+						</dt>
+					</dl>
+				</li>					
+			</ul>
+	    </div><!-- .history-date -->
+	    <div class="history-date">
+	      	<ul>
+				<h2 class="first"><a href="#nogo">2020年</a></h2>
+				<li class="green">
+					<h3>02.14</h3>
+					<dl>
+						<dt>
+							<div class="feed_arrow">
+							</div>		
+							<h4>
+								第一个情人节
+							</h4>	
+							<div class="wrap">	
+								<img src="photo/3.png">
+								<p>虽然第一个情人节不在彼此的身边，
+								但以后的每天都会是情人节哦
+								</p>
+							</div>									 
+						</dt>
+					</dl>
+				</li>					
+			</ul>
+	    </div><!-- .history-date -->
+	    <div class="history-date">
+	      	<ul>
+				<h2 class="first"><a href="#nogo">Forever</a></h2>
+				<li class="green">
+					<h3>EveryDay</h3>
+					<dl>
+						<dt>
+							<div class="feed_arrow">
+							</div>		
+							<h4>
+								LC永远
+							</h4>	
+							<div class="wrap">	
+								<img src="photo/6.png">
+								<p>爱Lucy哦
+								</p>
+							</div>									 
+						</dt>
+					</dl>
+				</li>					
+			</ul>
+	    </div><!-- .history-date -->
+	 
+    </div>		
+</div>
+
+<script src="js/jquery.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>
